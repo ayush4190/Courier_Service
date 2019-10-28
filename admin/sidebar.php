@@ -2,7 +2,7 @@
 session_start();
 
 ?>
-<body class="sticky-header left-side-collapsed"  onload="initMap()">
+<body class="sticky-header left-side"  onload="initMap()">
   <section>
     <!-- left side start-->
     <div class="left-side sticky-left-side">
@@ -19,14 +19,15 @@ session_start();
         <ul class="nav nav-pills nav-stacked custom-nav">
           <li class="active"><a href="home.php"><i class="lnr lnr-power-switch"></i><span>Dashboard</span></a></li>
           <?php
+            $_SESSION['user']="admin";
             if($_SESSION['user']=='admin')
             {
               ?>
           <li class="menu-list">
             <a href="#"><i class="lnr lnr-cog"></i>
-              <span>Dealer Request</span></a>
+              <span>Add Cities</span></a>
             <ul class="sub-menu-list">
-              <li><a href="add_dealerrequest.php">Add Request</a> </li>
+              <li><a href="addcity.php">Add Request</a> </li>
               <li><a href="view_dealerrequest.php">View Request</a></li>
             </ul>
           </li>
@@ -158,7 +159,7 @@ session_start();
   <div class="header-section">
 
     <!--toggle button start-->
-    <a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a>
+    <!-- <a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a> -->
     <!--toggle button end-->
 
     <!--notification menu start -->

@@ -1,174 +1,59 @@
-<?php session_start(); ?>
-<!DOCTYPE HTML>
+<?php
+session_start();
+
+if(isset($_SESSION['admusername']))
+			{
+				echo"<script>window.location='admhome.php'</script>";
+			//	header('location:admhome.php');
+			}
+else
+	{
+		#	echo '<script type="text/javascript"> alert("All in vain") </script>';
+	}
+require '../dbconfig/config.php';
+?>
+<!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
-  <!-- Custom CSS -->
-  <link href="css/style.css" rel='stylesheet' type='text/css' />
-  <!-- Graph CSS -->
-  <link href="css/font-awesome.css" rel="stylesheet">
-  <!-- jQuery -->
-  <!-- lined-icons -->
-  <link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
-  <!-- //lined-icons -->
-  <!-- chart -->
-  <script src="js/Chart.js"></script>
-  <!-- //chart -->
-  <!--animate-->
-  <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
-  <script src="js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
-  <!--//end-animate-->
-    <!----webfonts--->
-    <link href='//fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
-    <!---//webfonts--->
-    <!-- Meters graphs -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <!-- Placed js at the end of the document so the pages load faster -->
+	<title>Homepage</title>
+	<link rel="stylesheet" type="text/css" href="../css/style2.css">
+</head>
+<body style="background-color: #deefde">
+	<center><h2>LOGIN</h2></center>
+	<center><img class="avatar" src="../images/avatar.jpg"></center>
+	<form class="myform" action="index.php" method="post">
+		<label > <b>User Name</b></label>
+		<br>
+		<input type="text" name="username" class="ipvalues" placeholder="Type Your Username" required/>
+		<br>
+		<label><b>Password</b></label>
+		<br>
+		<input type="password" name="password" class="ipvalues" placeholder="Type Your Password" required/>
+		<br>
+		<input type="submit" name="submit_btn" id="register-button" value="Submit" />
+		<br>
+	</form>
+<?php
 
-  </head>
+	if(isset($_POST['submit_btn']))
+	{
+		$password=$_POST['password'];
+		$username=preg_replace('/[^A-Za-z0-9\-]/', '',$_POST['username']);
+				$query="select * from adm where username='$username' and password='$password'";
+				$query_run=mysqli_query($con,$query);
+				if(mysqli_num_rows($query_run)>0)
+				{
+					$_SESSION['admusername']=$username;
+					$_SESSION['city']='BHOPAL';
+					echo"<script>window.location='index.php'</script>";
+					//header('location:index.php');
+				}
+				else
+				echo"<script>window.location='../'</script>";
+				//	header('location:../');
 
-  <body class="sign-in-up">
-    <section>
-      <div id="page-wrapper" class="sign-in-wrapper">
-        <div class="graphs">
-          <div class="sign-in-form">
-            <div class="sign-in-form-top">
-              <p><span>Sign In to</span> <a href="index.html">Admin</a></p>
-            </div>
-            <div class="signin">
-<!--              <div class="signin-rit">
-                <span class="checkbox1">
-                  <label class="checkbox"><input type="checkbox" name="checkbox" checked="">Forgot Password ?</label>
-                </span>
-                <p><a href="#">Click Here</a> </p>
-                <div class="clearfix"> </div>
-              </div>-->
+	}
+?>
 
-              <form action="" method="post">
-                <div class="log-input">
-                  <div class="log-input-left">
-                    <input type="text" class="user" name="username" placeholder="Enter your username" required=""/>
-                  </div>
-                  <span class="checkbox2">
-                    <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i></label>
-                  </span>
-                  <div class="clearfix"> </div>
-                </div>
-                <div class="log-input">
-                  <div class="log-input-left">
-                    <input type="password" class="lock" name="password" placeholder="Enter your password"/>
-                  </div>
-                  <span class="checkbox2">
-                    <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i></label>
-                  </span>
-                  <div class="clearfix"> </div>
-                </div>
-
-                <div class="log-input">
-                 <div class="log-input-left">
-                  <select class="form-control" id="sel1" name="type" required="">
-                  <option value="admin">Admin</option>
-                    <option value="dealer">Dealer</option>
-                    <option value="corporate">Corporate</option>
-                  </select>
-                  </div>
-                   <span class="checkbox2">
-                    <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i></label>
-                  </span>
-                  </div>
-                  <div class="clearfix"> </div>
-
-                <input type="submit" value="Login to your account" name="s1">
-              </form>
-              <!--  -->
-            </div>
-<!--            <div class="new_people">
-              <h4>For New People</h4>
-              <p>Having hands on experience in creating innovative designs,I do offer design
-                solutions which harness.</p>
-              <a href="sign-up.html">Register Now!</a>
-            </div>-->
-          </div>
-        </div>
-      </div>
-      <!--footer section start-->
-      <footer>
-        <p>&copy 2017  Admin Panel. All Rights Reserved | Design by <a href="#" target="_blank">Adminpanel</a></p>
-      </footer>
-      <!--footer section end-->
-    </section>
-
-    <script src="js/jquery.nicescroll.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-  </html>
-
-
-  <?php
-
-
-  if(isset($_REQUEST['s1']))
-  {
-    include('../connection.php');
-     echo $username=$_REQUEST['username'];
-     echo $password=$_REQUEST['password'];
-
-     echo $login_type=$_REQUEST['type'];
-
-
-
-     if($login_type==='admin')
-     {
-      $res=mysqli_query($conn,"SELECT * FROM `admin` WHere admin='$username' And password='$password'");
-
-
-    }
-
-    if($login_type==='corporate')
-    {
-       $res=mysqli_query($conn,"SELECT * FROM `corporate` WHere user_id='$username' And password='$password'");
-
-    }
-       if($login_type==='dealer')
-    {
-       $res=mysqli_query($conn,"SELECT * FROM `deaer` WHere username='$username' And password='$password'");
-
-    }
-
-
-
-
-    $ros=mysqli_fetch_array($res);
-
-  // /print_r($ros);
-
-  if($ros)
-  {
-
-
-    $_SESSION['user'] = $login_type;
-
-
-   echo"<script>alert('login sucess');window.location='home.php'</script>";
-  }
-  else {
-    echo"<script>alert('login error');window.location='index.php';</script>";
-  }
-
-
-
-
-  }
-
-
-
-  ?>
+</body>
+</html>
