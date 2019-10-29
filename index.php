@@ -62,13 +62,13 @@
                                 <li><a href="index.html">home</a>
 
                                 </li>
-                                <li><a href="about.html">about</a>
+                                <li><a href="about.php">about</a>
                                     <ul>
-                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="about.php">About</a></li>
                                         <li><a href="about-company-profile.html">About Profile</a></li>
                                         <li><a href="about-company-history.html">About History</a></li>
                                         <li><a href="about-company-report.html">About Report</a></li>
-                                        <li><a href="about-team.html">About Team</a></li>
+                                        <li><a href="about-us.php">About Team</a></li>
                                         <li><a href="about-support.html">About Support</a></li>
                                     </ul>
                                 </li>
