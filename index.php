@@ -1,5 +1,7 @@
-<?php session_start(); ?>
+<?php session_start();
+require 'dbconfig/config.php';?>
 <!doctype html>
+
 
 <html class="no-js" lang="en">
 <!--<![endif]-->
@@ -59,25 +61,25 @@
 
                         <div id="main-nav" class="stellarnav">
                             <ul id="nav" class="nav navbar-nav">
-                                <li><a href="index.html">home</a>
+                                <li><a href="index.php">home</a>
 
                                 </li>
                                 <li><a href="about.php">about</a>
                                     <ul>
-                                        <li><a href="about.php">About</a></li>
+                                        <li><a href="about.html">About</a></li>
                                         <li><a href="about-company-profile.html">About Profile</a></li>
                                         <li><a href="about-company-history.html">About History</a></li>
                                         <li><a href="about-company-report.html">About Report</a></li>
-                                        <li><a href="about-us.php">About Team</a></li>
+                                        <li><a href="about-team.html">About Team</a></li>
                                         <li><a href="about-support.html">About Support</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="service.html">Service</a>
+                                <li><a href="service.php">Service</a>
 
                                 </li>
                                 <li><a href="">login</a>
                                     <ul>
-                                        <li><a href="/admin">admin</a></li>
+                                        <!-- <li><a href="/admin">admin</a></li> -->
                                         <li><a href="loginformcus.php">customer</a></li>
                                           <li><a href="loginform.php">employee</a></li>
                                     </ul>
@@ -105,7 +107,7 @@
                                 <p>Bringing happiness to your doorstep is our privilage</p>
                                 <div class="home-button">
                                     <a href="#">Our Service</a>
-                                    <a href="#">Get A Quate</a>
+                                    <a href="#Quote">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
@@ -121,7 +123,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                                 <div class="home-button">
                                     <a href="#">Our Service</a>
-                                    <a href="#">Get A Quate</a>
+                                    <a href="#Quote">Get A Quote</a>
                                 </div>
                             </div>
                         </div>
@@ -187,8 +189,8 @@
             <div class="row">
                 <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                     <div class="quote-form-area wow fadeIn">
-                        <h3>Get A Quote</h3>
-                        <form class="quote-form" action="#">
+                        <h3 id="Quote">Get A Quote</h3>
+                        <form class="quote-form" action="index.php">
                             <p class="width-full">
                                 <input type="text" name="name" id="name" placeholder="Your Name">
                             </p>
@@ -206,7 +208,8 @@
                             <p>
                                 <textarea name="quote-message" id="quote-message" cols="30" rows="4" placeholder="Your Message..."></textarea>
                             </p>
-                            <button type="submit">Send</button>
+                            <button type="submit" >Get Details</button>
+
                         </form>
                     </div>
                 </div>
