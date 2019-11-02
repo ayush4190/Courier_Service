@@ -68,8 +68,8 @@ require 'dbconfig/config.php';?>
                                     <ul>
                                         <li><a href="about.html">About</a></li>
                                         <li><a href="about-company-profile.html">About Profile</a></li>
-                                        <li><a href="about-company-history.html">About History</a></li>
-                                        <li><a href="about-company-report.html">About Report</a></li>
+                                        <li><a href="price-list.html">Price-List</a></li>
+
                                         <li><a href="about-team.html">About Team</a></li>
                                         <li><a href="about-support.html">About Support</a></li>
                                     </ul>
