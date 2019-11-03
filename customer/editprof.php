@@ -37,7 +37,7 @@ require '../dbconfig/config.php';
         <div class="container">
                 <!--- logo ----->
                 <div class="logo">
-                    <img src="/img/logo.png" alt="Logo"  /> <a href="../index.php"><span></span>Carries</a>
+                    <img src="../images/logo45.png" alt="Logo"  /> <a href="../index.php"><span></span>Carries</a>
                 </div>
                 <!--- logo ----->
 <!--- top-nav ----->
@@ -46,12 +46,9 @@ require '../dbconfig/config.php';
     <ul>
         <li ><a href="index.php">Home</a></li>
         <!--<li ><a href="faq.php">FAQ</a></li>-->
-      <li><a href="tracktest.php">Track Item</a></li>
-            <li><a href="requestform.php">Request Pick-Up</a></li>
-
-
-
-        <li ><a href="#"></a><?php echo $_SESSION['username']?></li>
+        <li ><a href="../contact.php">Contact</a></li>
+                <li ><a href="../login.php">Login</a></li>
+        <li ><a href="../register.php">Register</a></li>
             </ul>
 </div>
 <div class="clearfix"> </div>

@@ -36,7 +36,7 @@ require '../dbconfig/config.php';
         <div class="container">
 
                 <div class="logo">
-                    <img src="../images/logo45.png" alt="Logo"  /> <a href="../index.php"><span></span>TYC</a>
+                    <img src="../img/logo.png" alt="Logo"  /> <a href="../index.php"><span></span>Carries</a>
                 </div>
 
 <div class="top-nav">
@@ -45,8 +45,9 @@ require '../dbconfig/config.php';
         <li ><a href="index.php">Home</a></li>
         <!--<li ><a href="faq.php">FAQ</a></li>-->
         <li ><a href="../contact.php">Contact</a></li>
-                <li ><a href="../login.php">Login</a></li>
-        <li ><a href="../register.php">Register</a></li>
+                <li><a href="#"><?php echo $_SESSION['empusername'];  ?></a>
+                                    
+                                </li>
             </ul>
 </div>
 <div class="clearfix"> </div>
@@ -65,6 +66,8 @@ require '../dbconfig/config.php';
 <!---- header ----->
 <!------ about ---->
 <div class="about">
+
+
     <!--- bradcrumbs ---->
     <div class="breadcrumbs">
         <div class="container">
@@ -90,6 +93,7 @@ require '../dbconfig/config.php';
 </div>
 <div class="about-top-grids">
     <div class="container">
+
         <!---- about-grids ---->
         <div class="about-grids">
             <div class="about-grids-row1">
@@ -136,9 +140,9 @@ require '../dbconfig/config.php';
                             <div class="top-footer-grid">
                                     <h3>Contact us</h3>
                                     <ul class="address">
-                                        <li><span class="map-pin"> </span><label>AP Kanvide Bhawan <br>3122 3 Chatrawaas <br>Near Powai Lake, Bhopal MP (462003) </label></li>
+                                        <li><span class="map-pin"> </span><label>MT3 <br>Rooms B018 and B016 <br>NITK, Surathkal ,Karnakata (575025) </label></li>
                                         <li><span class="mob"> </span>Ph & Fax no - 0995-5377130, Mob- 8000000008</li>
-                                        <li><span class="msg"> </span><a href="#">hello@tyc.in</a></li>
+                                        <li><span class="msg"> </span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=aashaym1@gmail.com.com">aashaym1@gmail.com</a></li>
                                     </ul>
                             </div>
                             <div class="top-footer-grid">
@@ -146,8 +150,7 @@ require '../dbconfig/config.php';
                                     <ul class="latest-post">
                                         <li><a href="../index.php">Home</a> </li>
 
-                                        <li><a href="../register.php">Register</a> </li>
-                                        <li><a href="../login.php">Login</a> </li>
+                                       
                                     </ul>
                             </div>
                             <div class="top-footer-grid">
@@ -169,7 +172,8 @@ require '../dbconfig/config.php';
             <div class="container">
                     <div class="bottom-footer-left">
 
-                             <p> &copy; 2017 TYC.in. All rights reserved | Powered by: <a href="http://www.facebook.com/shivtelo" target="_blank">Techvish Technologies</a></p>
+                             <p> &copy; 2019 Carries.in. All rights reserved | Powered by: <a href="http://www.nitk.ac.in" target="_blank">NITK</a></p>
+
                     </div>
                     <div class="clear"> </div>
             </div>

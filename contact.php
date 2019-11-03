@@ -102,9 +102,11 @@
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <div class="welcome-text text-center">
                             <h2>Contact Us</h2>
-                            <ul class="address">
-                                <li><span class="map-pin"> </span><label>AP Kanvide Bhawan <br>3122 3 Chatrawaas <br>Near Powai Lake, Bhopal MP (462003) </label></li>
-                                <li><span class="mob"> </span>Ph & Fax no - 0995-5377130, Mob- 8000000008</li>
+                             <ul class="address">
+                                        <li><span class="map-pin"> </span><label>MT3 <br>Rooms B018 and B016 <br>NITK, Surathkal ,Karnakata (575025) </label></li>
+                                        <li><span class="mob"> </span>Ph & Fax no - 0995-5377130, Mob- 8000000008</li>
+                                        <li><span class="msg"> </span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=aashaym1@gmail.com.com">aashaym1@gmail.com</a></li>
+                                   
                                 <li><span class="msg"> </span><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ayushkumar.171co111@nitk.edu.in@gmail.com">ayushkumar.171co111@nitk.edu.in</a></li>
                             </ul>
 
@@ -217,15 +219,20 @@
                                 <li>
                                     <div class="twitter-icon"><i class="fa fa-phone"></i></div>
                                     <div class="tweet-detail">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem .</p>
+                                        <p>Those in #courier work long enough will know this is the point during the year that delivery work usually hits its peak.
+
+Get ready, service your vehicle, make your sandwiches and be ready when those customers call!
+
+It's time to make some money ready for winter.</p>
                                         <a href="#" class="tweet-meta">5 Miniutes Ago</a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="twitter-icon"><i class="fa fa-phone"></i></div>
                                     <div class="tweet-detail">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem .</p>
-                                        <a href="#" class="tweet-meta">5 Miniutes Ago</a>
+                                        <p>Did you know....You can save time as well as money by obtaining quotes and even booking deliveries on our online portal. Ask us for a free demonstration #WednesdayWisdom #Courier #Delivery
+</p>
+                                        <a href="#" class="tweet-meta">8 Miniutes Ago</a>
                                     </div>
                                 </li>
                             </ul>
@@ -271,8 +278,8 @@
                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                         <div class="footer-copyright wow fadeIn">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made by 171CO201 and 171CO111</p>
+                            
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">

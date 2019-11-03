@@ -298,11 +298,6 @@ ALTER TABLE `vcons`
   ADD CONSTRAINT `vcons_ibfk_1` FOREIGN KEY (`id`) REFERENCES `consig` (`id`),
   ADD CONSTRAINT `vcons_ibfk_2` FOREIGN KEY (`vby`) REFERENCES `empuserinfo` (`username`) ON DELETE CASCADE ON UPDATE CASCADE;
 
-CREATE TABLE `Courier_val`(`speed` varchar(10) not null, `rate_kg` float ,`type` varchar(10) not null)ENGINE=InnoDB DEFAULT CHARSET=latin1;
-insert into `Courier_val`(`speed`,`rate_kg`,`type`) values('Medium',1.2,'Normal'),('Fast',1.5,'Normal'),('Turbo',2,'Normal'),('Medium',1.7,'Fragile'),('Fast',2.0,'Fragile'),('Turbo',2.5,'Fragile'),('Medium',3,'Document'),('Fast',3.5,'Document'),('Turbo',4,'Document');
-
- 
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

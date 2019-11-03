@@ -37,7 +37,7 @@ require '../dbconfig/config.php';
         <div class="container">
                 <!--- logo ----->
                 <div class="logo">
-                    <img src="/img/logo.png" alt="Logo"  /> <a href="../index.php"><span></span>Carries</a>
+                    <img src="/images/logo.png" alt="Logo"  /> <a href="../index.php"><span></span>Carries</a>
                 </div>
                 <!--- logo ----->
 <!--- top-nav ----->
@@ -132,7 +132,13 @@ require '../dbconfig/config.php';
 		<option value="1">Medium</option>
 		<option value="2">Fast</option>
 		<option value="3">Turbo</option>
-
+		<?php
+		//	$query="select * from city";
+		//			$query_run=mysqli_query($con,$query);
+		//				while($row = mysqli_fetch_array($query_run)){
+		//					echo "<option value='" . $row['cityname'] . "'>" . $row['cityname'] . "</option>";}
+		//
+		 ?>
 		 </select>
 		 <input type="submit" name="submit_button" id="register-button" value="Schedule Pick Up" />
 		 <a href="test.php"><input type="button" id="back-button" value="<<Back to Home" /></a>
@@ -142,12 +148,12 @@ require '../dbconfig/config.php';
 		 <?php
 										if(isset($_POST['submit_button']))
 										{
+
 											$un=$_SESSION['username'];
 											$addr=$_POST['addr'];
 											$city=$_POST['dc'];
 											$ds=$_POST['ds'];
 											$sc=$_SESSION['sct'];
-
 											//echo $user_type ;
 
 													$query="insert into consig(ord_by,sc,dc,cc,serv_type) values('".$un."','".$sc."','".$city."','".$sc."',".$ds.")";

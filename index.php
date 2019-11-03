@@ -1,7 +1,5 @@
-<?php session_start();
-require 'dbconfig/config.php';?>
+<?php session_start(); ?>
 <!doctype html>
-
 
 <html class="no-js" lang="en">
 <!--<![endif]-->
@@ -61,25 +59,25 @@ require 'dbconfig/config.php';?>
 
                         <div id="main-nav" class="stellarnav">
                             <ul id="nav" class="nav navbar-nav">
-                                <li><a href="index.php">home</a>
+                                <li><a href="index.html">home</a>
 
                                 </li>
                                 <li><a href="about.php">about</a>
                                     <ul>
-                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="about.php">About</a></li>
                                         <li><a href="about-company-profile.html">About Profile</a></li>
-                                        <li><a href="price-list.html">Price-List</a></li>
-
-                                        <li><a href="about-team.html">About Team</a></li>
+                                        <li><a href="about-company-history.html">About History</a></li>
+                                        <li><a href="about-company-report.html">About Report</a></li>
+                                        <li><a href="about-us.php">About Team</a></li>
                                         <li><a href="about-support.html">About Support</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="service.php">Service</a>
+                                <li><a href="service.html">Service</a>
 
                                 </li>
                                 <li><a href="">login</a>
                                     <ul>
-                                        <!-- <li><a href="/admin">admin</a></li> -->
+                                        <li><a href="/admin">admin</a></li>
                                         <li><a href="loginformcus.php">customer</a></li>
                                           <li><a href="loginform.php">employee</a></li>
                                     </ul>
@@ -107,7 +105,7 @@ require 'dbconfig/config.php';?>
                                 <p>Bringing happiness to your doorstep is our privilage</p>
                                 <div class="home-button">
                                     <a href="#">Our Service</a>
-                                    <a href="#Quote">Get A Quote</a>
+                                    <a href="#">Get A Quate</a>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +121,7 @@ require 'dbconfig/config.php';?>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                                 <div class="home-button">
                                     <a href="#">Our Service</a>
-                                    <a href="#Quote">Get A Quote</a>
+                                    <a href="#">Get A Quate</a>
                                 </div>
                             </div>
                         </div>
@@ -189,8 +187,8 @@ require 'dbconfig/config.php';?>
             <div class="row">
                 <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                     <div class="quote-form-area wow fadeIn">
-                        <h3 id="Quote">Get A Quote</h3>
-                        <form class="quote-form" action="index.php">
+                        <h3>Get A Quote</h3>
+                        <form class="quote-form" action="#">
                             <p class="width-full">
                                 <input type="text" name="name" id="name" placeholder="Your Name">
                             </p>
@@ -208,8 +206,7 @@ require 'dbconfig/config.php';?>
                             <p>
                                 <textarea name="quote-message" id="quote-message" cols="30" rows="4" placeholder="Your Message..."></textarea>
                             </p>
-                            <button type="submit" >Get Details</button>
-
+                            <button type="submit">Send</button>
                         </form>
                     </div>
                 </div>
