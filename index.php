@@ -64,19 +64,16 @@ require 'dbconfig/config.php';?>
                                 <li><a href="index.php">home</a>
 
                                 </li>
-                                <li><a href="about.php">about</a>
+                                <li><a href="#">about</a>
                                     <ul>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="about-company-profile.html">About Profile</a></li>
+
                                         <li><a href="price-list.html">Price-List</a></li>
 
                                         <li><a href="about-team.html">About Team</a></li>
-                                        <li><a href="about-support.html">About Support</a></li>
+
                                     </ul>
                                 </li>
-                                <li><a href="service.php">Service</a>
-
-                                </li>
+                                
                                 <li><a href="">login</a>
                                     <ul>
                                         <!-- <li><a href="/admin">admin</a></li> -->
@@ -120,7 +117,7 @@ require 'dbconfig/config.php';?>
                         <div class="col-md-10 col-md-offset-1">
                             <div class="welcome-text text-center">
                                 <h1>WE MAKE STRONGEST SERVICE ABOVE THE WORLD</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <p>Stay connected with your friends and family.</p>
                                 <div class="home-button">
                                     <a href="#">Our Service</a>
                                     <a href="#Quote">Get A Quote</a>
@@ -147,7 +144,7 @@ require 'dbconfig/config.php';?>
                         <div class="blog-details text-center">
                             <div class="blog-meta"><a href="#"><i class="fa fa-ship"></i></a></div>
                             <h3><a href="single-blog.html">Ocean Freight</a></h3>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout..</p>
+                            <p>WE have a fleet of ships to deliver gooda across continents in a cost effective manner.</p>
                             <a href="single-blog.html" class="read-more">Read More</a>
                         </div>
                     </div>
@@ -160,8 +157,8 @@ require 'dbconfig/config.php';?>
                         <div class="blog-details text-center">
                             <div class="blog-meta"><a href="#"><i class="fa fa-plane"></i></a></div>
                             <h3><a href="single-blog.html">Air Freight</a></h3>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout..</p>
-                            <a href="single-blog.html" class="read-more">Read More</a>
+                            <p>Wish to deliver cargo in express way . Come we got you covered by exclusive fleet of flights that enable us to make one-day express delivery possible.</p>
+
                         </div>
                     </div>
                 </div>
@@ -173,8 +170,8 @@ require 'dbconfig/config.php';?>
                         <div class="blog-details text-center">
                             <div class="blog-meta"><a href="#"><i class="fa fa-truck"></i></a></div>
                             <h3><a href="single-blog.html">Street Freight</a></h3>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout..</p>
-                            <a href="single-blog.html" class="read-more">Read More</a>
+                            <p>You live in a remote location not accessable by water or air dont worry we even got you covered with world class transportation trucks with world class facilities for all kind of goods.</p>
+
                         </div>
                     </div>
                 </div>
@@ -217,21 +214,21 @@ require 'dbconfig/config.php';?>
                     <div class="about-content-area wow fadeIn">
                         <div class="about-content">
                             <h2>We have 25 years experience in this passion</h2>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,</p>
-                            <a href="#">read more <i class="fa fa-angle-right"></i></a>
+                            <p>We love serving you and thats the most important motivation wich keeps on moving us thus expanding our Business to make a the world a big happy family.</p>
+
                         </div>
                         <div class="about-count">
                             <div class="single-about-count">
-                                <h4><i class="fa fa-suitcase"></i> 120</h4>
-                                <p>Project Done</p>
+                                <h4><i class="fa fa-suitcase"></i> 12000</h4>
+                                <p>Cargo delivered Till Today</p>
                             </div>
                             <div class="single-about-count">
-                                <h4><i class="fa fa-thumbs-o-up"></i> 100</h4>
-                                <p>Project Done</p>
+                                <h4><i class="fa fa-thumbs-o-up"></i> 10000</h4>
+                                <p>Satisfied customer</p>
                             </div>
                             <div class="single-about-count">
-                                <h4><i class="fa fa-users"></i> 30</h4>
-                                <p>Project Done</p>
+                                <h4><i class="fa fa-users"></i> 10</h4>
+                                <p>Business Centre</p>
                             </div>
                         </div>
                     </div>
@@ -249,7 +246,7 @@ require 'dbconfig/config.php';?>
                     <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
                         <div class="area-title text-center wow fadeIn">
                             <h2>Our Service</h2>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, </p>
+                            <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, </p> -->
                         </div>
                     </div>
                 </div>
@@ -257,8 +254,8 @@ require 'dbconfig/config.php';?>
                     <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                         <div class="service-content wow fadeIn">
                             <h2>we offer quick & powerful logistics solution</h2>
-                            <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you.</p>
-                            <a href="service.html" class="read-more">Learn More</a>
+                            <p>Contact us if you want to know more about us and our service.</p>
+
                         </div>
                     </div>
                     <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
@@ -268,14 +265,14 @@ require 'dbconfig/config.php';?>
                                 <div class="col-md-7 col-lg-7 col-md-offset-5 col-lg-offset-5 col-sm-12 col-xs-12">
                                     <div class="catalouge-content">
                                         <h3>Why Choose Us ?</h3>
-                                        <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you.</p>
+                                        <p>What makes us different from others in the market.</p>
                                         <ul>
-                                            <li><i class="fa fa-check"></i> Lorem ipsum dolor sit amet, consectetur.</li>
-                                            <li><i class="fa fa-check"></i> Sed quia consequuntur magni dolores eos.</li>
-                                            <li><i class="fa fa-check"></i> Nemo enim ipsam voluptatem .</li>
-                                            <li><i class="fa fa-check"></i> We denounce with righteous indignation.</li>
+                                            <li><i class="fa fa-check"></i> Doorstep Pick_up.</li>
+                                            <li><i class="fa fa-check"></i>No advance payment required</li>
+                                            <li><i class="fa fa-check"></i> Cash as well online payment at Doorstep .</li>
+                                            <li><i class="fa fa-check"></i> Speed options for your goods delivery.</li>
                                         </ul>
-                                        <a href="service.html" class="read-more">Learn More</a>
+
                                     </div>
                                 </div>
                             </div>
@@ -300,8 +297,8 @@ require 'dbconfig/config.php';?>
                                 </div>
                                 <div class="service-details">
                                     <h4>Ware House</h4>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                                    <a href="#">read more</a>
+                                    <p>We have huge warehouses so if the receiver is not available we can hold your shipment for a decent amount of time .</p>
+
                                 </div>
                             </div>
                             <div class="single-service">
@@ -312,8 +309,8 @@ require 'dbconfig/config.php';?>
                                 </div>
                                 <div class="service-details">
                                     <h4>Road Freight</h4>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                                    <a href="#">read more</a>
+                                    <p>World Class trucks delivery our cargo safely to our warehouse before getting distributed.</p>
+
                                 </div>
                             </div>
                             <div class="single-service">
@@ -324,8 +321,8 @@ require 'dbconfig/config.php';?>
                                 </div>
                                 <div class="service-details">
                                     <h4>Sea Freight</h4>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                                    <a href="#">read more</a>
+                                    <p>Fleet of Cargo ships</p>
+
                                 </div>
                             </div>
                             <div class="single-service">
@@ -336,8 +333,8 @@ require 'dbconfig/config.php';?>
                                 </div>
                                 <div class="service-details">
                                     <h4>Air Freight</h4>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                                    <a href="#">read more</a>
+                                    <p>Airbus 320neo at your SERVICE</p>
+
                                 </div>
                             </div>
                         </div>
@@ -358,14 +355,14 @@ require 'dbconfig/config.php';?>
                             <div class="promo-icon"><i class="fa fa-anchor"></i></div>
                             <div class="promo-details">
                                 <h3>Our Location</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>All prime location we got you covered.</p>
                             </div>
                         </div>
                         <div class="single-promo">
                             <div class="promo-icon"><i class="fa fa-newspaper-o"></i></div>
                             <div class="promo-details">
                                 <h3>Latest News</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Something new in Shipping industry.</p>
                             </div>
                         </div>
                     </div>
@@ -374,14 +371,14 @@ require 'dbconfig/config.php';?>
                             <div class="promo-icon"><i class="fa fa-umbrella"></i></div>
                             <div class="promo-details">
                                 <h3>24/7 Support</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Got a query just hit us anytime.</p>
                             </div>
                         </div>
                         <div class="single-promo">
                             <div class="promo-icon"><i class="fa fa-bicycle"></i></div>
                             <div class="promo-details">
                                 <h3>Fast Delevery</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Ah! this is why we made this company.</p>
                             </div>
                         </div>
                     </div>
@@ -415,12 +412,7 @@ require 'dbconfig/config.php';?>
                             <div class="item">
                                 <img src="img/testmonial/3.jpg" alt="">
                             </div>
-                            <div class="item">
-                                <img src="img/testmonial/1.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="img/testmonial/2.jpg" alt="">
-                            </div>
+
                         </div>
                     </div>
                 </div>

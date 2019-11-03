@@ -70,17 +70,14 @@ require '../dbconfig/config.php';?>
 
                         <div id="main-nav" class="stellarnav">
                             <ul id="nav" class="nav navbar-nav">
-                                <li><a href="index.html">home</a>
+                                <li><a href="index.php">home</a>
 
                                 </li>
-                                <li><a href="about.html">about</a>
+                                <li><a href="#">about</a>
                                     <ul>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="about-company-profile.html">About Profile</a></li>
-                                        <li><a href="about-company-history.html">About History</a></li>
-                                        <li><a href="about-company-report.html">About Report</a></li>
-                                        <li><a href="about-team.html">About Team</a></li>
-                                        <li><a href="about-support.html">About Support</a></li>
+
+                                        <li><a href="../about-team.html">About Team</a></li>
+
                                     </ul>
                                 </li>
                                 <li><a href="../contact.php">Contact</a>
@@ -88,8 +85,8 @@ require '../dbconfig/config.php';?>
                                   <ul>
 
 
-                                      <li><a href="trackcons.php">Track Item</a></li>
-                                      <li><a href="addcons.php">Request Pick-Up</a></li>
+                                      <li><a href="tracktest.php">Track Item</a></li>
+                                      <li><a href="requestform.php">Request Pick-Up</a></li>
 
                                   </ul>
 
@@ -118,7 +115,17 @@ require '../dbconfig/config.php';?>
                 <div class="container">
                     <div class="row flex-v-center">
                         <div class="col-md-10 col-md-offset-1">
+													<div class="welcome-text text-center">
+															<h1>Welcome</br>
+																<?php
+																						$un=$_SESSION['username'];
+																						$query="select * from userinfo where username='$un'";
+																						$query_run=mysqli_query($con,$query);
+																						$row = mysqli_fetch_array($query_run);
+																						echo $row['pname'];
+																						?></h1>
 
+															</div>
                         </div>
                     </div>
                 </div>

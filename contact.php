@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+<?php session_start();
+
+require 'dbconfig/config.php';
+
+?>
 <!doctype html>
 
 <html class="no-js" lang="en">
@@ -60,17 +64,13 @@
 
                         <div id="main-nav" class="stellarnav">
                             <ul id="nav" class="nav navbar-nav">
-                                <li><a href="index1.php">home</a>
+                                <li><a href="index.php">home</a>
 
                                 </li>
-                                <li><a href="about.html">about</a>
+                                <li><a href="#">about</a>
                                     <ul>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="about-company-profile.html">About Profile</a></li>
-                                        <li><a href="about-company-history.html">About History</a></li>
-                                        <li><a href="about-company-report.html">About Report</a></li>
-                                        <li><a href="about-team.html">About Team</a></li>
-                                        <li><a href="about-support.html">About Support</a></li>
+                                        <li><a href="about-team.html">Team</a></li>
+
                                     </ul>
                                 </li>
                                 <li><a href="service.html">Service</a>
@@ -78,9 +78,9 @@
                                 </li>
                                 <li><a href="">login</a>
                                     <ul>
-                                        <li><a href="/admin">admin</a></li>
-                                        <li><a href="index.php">customer</a></li>
-                                          <li><a href="index.php">employee</a></li>
+
+                                        <li><a href="loginformcus.php">customer</a></li>
+                                          <li><a href="loginform.php">employee</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="register.php">Register</a></li>
@@ -127,14 +127,14 @@
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <div class="area-title text-center">
                             <h3>GET IN TOUCH</h3>
-                            <p>Need any help jusct send a message via our email address</p>
+                            <p>Need any help just send a message via our email address</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
                         <div class="contact-form">
-                            <form action="process.php" id="contact-form" method="post">
+                            <form action="contact.php" id="contact-form" method="post">
                                 <div class="row">
                                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                                         <div class="form-group" id="name-field">
@@ -171,13 +171,50 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                                        <div class="form-group">
-                                            <button type="submit">Send</button>
-                                        </div>
+                                        	 <input type="submit" name="submit_button" id="register-button" value="Send Message" />
                                     </div>
                                 </div>
                             </form>
                         </div>
+
+<!-- ================================================================= -->
+
+
+<?php
+               if(isset($_POST['submit_button']))
+               {
+                 $name = $_POST['form-name'];
+                 $email = $_POST['form-email'];
+                 $phone = $_POST['form-phone'];
+                 $message =$_POST['form-message'];
+                 //echo $user_type ;
+
+                     $query="insert into messagerequest(name,email,phone_no,message) values('".$name."','".$email."','".$phone."','".$message."')";
+                     $query_run=mysqli_query($con,$query);
+                       if($query_run)
+                         {
+
+
+                               echo '<script type="text/javascript"> alert("Request added successfully,check your mail for response") </script>';
+
+
+
+
+
+                         }
+                       else
+                         echo '<script type="text/javascript"> alert("Some Error Occured") </script>';
+
+                     }
+
+                   ?>
+
+
+
+
+<!-- =================================================================== -->
+
+
                     </div>
                     <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                         <div class="contact-image text-center">
@@ -305,7 +342,7 @@
     <script src="js/stellar.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/stellarnav.min.js"></script>
-    <script src="js/contact-form.js"></script>
+    <!-- <script src="js/contact-form.js"></script> -->
     <script src="js/jquery.sticky.js"></script>
 
     <!--===== ACTIVE JS=====-->
