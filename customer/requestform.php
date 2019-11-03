@@ -113,10 +113,10 @@ require '../dbconfig/config.php';
 					<span class="label-input100">Item Type</span>
 					<div>
 						<select class="selection-2" name="item_type">
-							<option>Select Type</option>
-							<option>Fragile</option>
-							<option>Solid container</option>
-							<option>Perisable Goods</option>
+							<option >Select Type</option>
+							<option >Fragile</option>
+							<option >Documents</option>
+							<option >Perisable Goods</option>
 						</select>
 					</div>
 					<span class="focus-input100"></span>
@@ -136,6 +136,15 @@ require '../dbconfig/config.php';
 						</button>
 					</div>
 				</div>
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn" input type="submit" name="submit_button" id="register-button" >
+								<a href="test.php"> Back to home Page </a>
+						</button>
+					</div>
+				</div>
+
 			</form>
 		</div>
 
@@ -145,14 +154,18 @@ require '../dbconfig/config.php';
  									if(isset($_POST['submit_button']))
  									{
  										$un=$_SESSION['username'];
- 										$addr=$_POST['addr'];
+ 										$address=$_POST['addr'];
  										$city=$_POST['dc'];
  										$ds=$_POST['ds'];
  										$sc=$_SESSION['sct'];
+										$message = $_POST['message'];
+										$item_type = $_POST['item_type'];
+										$landmark = $_POST['landmark'];
+
 
  										//echo $user_type ;
 
- 												$query="insert into consig(ord_by,sc,dc,cc,serv_type) values('".$un."','".$sc."','".$city."','".$sc."',".$ds.")";
+ 												$query="insert into consig(ord_by,sc,dc,cc,serv_type,item_type,messeage,full_address,landmark) values('".$un."','".$sc."','".$city."','".$sc."',".$ds.",'".$item_type."','".$message."','".$address."','".$landmark."')";
  												$query_run=mysqli_query($con,$query);
  													if($query_run)
  														{

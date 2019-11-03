@@ -44,7 +44,7 @@ require '../dbconfig/config.php';
 <div class="top-nav">
     <span class="menu"> </span>
     <ul>
-        <li ><a href="index.php">Home</a></li>
+        <li ><a href="test.php">Home</a></li>
         <!--<li ><a href="faq.php">FAQ</a></li>-->
         <li ><a href="../contact.php">Contact</a></li>
                 <li ><a href="../login.php">Login</a></li>
