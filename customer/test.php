@@ -70,10 +70,10 @@ require '../dbconfig/config.php';?>
 
                         <div id="main-nav" class="stellarnav">
                             <ul id="nav" class="nav navbar-nav">
-                                <li><a href="test.php">home</a>
+                                <li><a href="index.html">home</a>
 
                                 </li>
-                                <li><a href="about.php">about</a>
+                                <li><a href="about.html">about</a>
                                     <ul>
                                         <li><a href="about.html">About</a></li>
                                         <li><a href="about-company-profile.html">About Profile</a></li>
@@ -88,8 +88,8 @@ require '../dbconfig/config.php';?>
                                   <ul>
 
 
-                                      <li><a href="tracktest.php">Track Item</a></li>
-                                      <li><a href="requestform.php">Request Pick-Up</a></li>
+                                      <li><a href="trackcons.php">Track Item</a></li>
+                                      <li><a href="addcons.php">Request Pick-Up</a></li>
 
                                   </ul>
 
@@ -118,17 +118,6 @@ require '../dbconfig/config.php';?>
                 <div class="container">
                     <div class="row flex-v-center">
                         <div class="col-md-10 col-md-offset-1">
-													<div class="welcome-text text-center">
-															<h1>Welcome</br>
-																<?php
-																						$un=$_SESSION['username'];
-																						$query="select * from userinfo where username='$un'";
-																						$query_run=mysqli_query($con,$query);
-																						$row = mysqli_fetch_array($query_run);
-																						echo $row['pname'];
-																						?></h1>
-
-															</div>
 
                         </div>
                     </div>
@@ -171,19 +160,22 @@ require '../dbconfig/config.php';?>
 		font-family: arial, sans-serif;
 		border-collapse: collapse;
 		width: 100%;
+                margin-bottom:70px;
 	}
 
 	td, th {
 		border: 1px solid #dddddd;
 		text-align: left;
-		padding: 0px;
+		padding: 8px;
+
 	}
 
 	tr:nth-child(even) {
 		background-color: #dddddd;
 	}
 	</style>
-	<h3><center>Items you have shipped till today using our SERVICE</center></h3>
+	<h3 align="center"> Items you have shipped till today using our SERVICE</h3>
+
 	<table><tr><th>Courier-ID</th><th>Source</th><th>Destination</th><th>Current Courier Branch</th><th>Date of Request</th><th> Status</th></tr>
 <!--adding consignments-->
 
@@ -206,8 +198,6 @@ require '../dbconfig/config.php';?>
   echo "<tr><td>" .$row['id'] ."</td><td>" .$row['sc'] ."</td><td>" .$row['dc'] ."</td><td>" .$row['cc'] ."</td><td>" .$row['added_on'] ."</td><td>" .$_status ."</td></tr>";
 }
 
-
-
 	 ?>
 
 	 <!-- consignments end here -->
@@ -227,20 +217,22 @@ require '../dbconfig/config.php';?>
 		<style>
 		table {
 			font-family: arial, sans-serif;
+
 			border-collapse: collapse;
 			width: 100%;
 		}
 
 		td, th {
-			border: 1px solid #dddddd;
-			text-align: left;
-			padding-right: 30px;
-	  padding-bottom: 50px;
-	  padding-left: 80px;
+			border: 1px solid #aaaa;
+			text-align: center;
+
+
+			padding: 30px;
 		}
 
 		tr:nth-child(even) {
-			background-color: #dddddd;
+			background-color: red;
+color:white;
 		}
 		</style>
 		<table><tr><th></th></t
