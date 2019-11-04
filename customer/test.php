@@ -77,6 +77,7 @@ require '../dbconfig/config.php';?>
                                     <ul>
 
                                         <li><a href="../about-team.html">About Team</a></li>
+																				  <li><a href="quote.php">Get Quote</a></li>
 
                                     </ul>
                                 </li>
@@ -87,6 +88,7 @@ require '../dbconfig/config.php';?>
 
                                       <li><a href="tracktest.php">Track Item</a></li>
                                       <li><a href="requestform.php">Request Pick-Up</a></li>
+
 
                                   </ul>
 

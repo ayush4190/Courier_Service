@@ -63,22 +63,18 @@ require '../dbconfig/config.php';
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form" action="requestform.php" method="post">
+			<form class="contact100-form validate-form" action="quote.php" method="post">
 				<span class="contact100-form-title">
-			Request Pick-up
+			Get Quote
 				</span>
 
 				<div class="wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100">Full address of Destination</span>
-					<input class="input100" type="text" name="addr" placeholder="Enter your Destination" required>
+					<span class="label-input100">Approx weight of the Good</span>
+					<input class="input100" type="number" name="weight" placeholder="Enter Weight of Good" >
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<span class="label-input100">Landmark if any</span>
-					<input class="input100" type="text" name="landmark" placeholder="Landmark">
-					<span class="focus-input100"></span>
-				</div>
+
 
 				<div class="wrap-input100 input100-select">
 					<span class="label-input100">Destination City</span>
@@ -123,23 +119,13 @@ require '../dbconfig/config.php';
 				</div>
 
 
-				<div class="wrap-input100 validate-input" data-validate="Name is required">
-					<span class="label-input100">Approx weight of the Good</span>
-					<input class="input100" type="number" name="weight" placeholder="Enter Weight of Good" >
-					<span class="focus-input100"></span>
-				</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<span class="label-input100">Message</span>
-					<textarea class="input100" name="message" placeholder="Any special Assistance required..."></textarea>
-					<span class="focus-input100"></span>
-				</div>
 
 				<div class="container-contact100-form-btn">
 					<div class="wrap-contact100-form-btn">
 						<div class="contact100-form-bgbtn"></div>
 						<button class="contact100-form-btn" input type="submit" name="submit_button" id="register-button" >
-								Request Pick-Up
+								Get Quote
 						</button>
 					</div>
 				</div>
@@ -157,91 +143,45 @@ require '../dbconfig/config.php';
 
 		<!--  ====================================  -->
 
-		<?php
- 									if(isset($_POST['submit_button']))
- 									{
- 										$un=$_SESSION['username'];
- 										$address=$_POST['addr'];
- 										$city=$_POST['dc'];
- 										$ds=$_POST['ds'];
- 										$sc=$_SESSION['sct'];
-										$message = $_POST['message'];
-										$item_type = $_POST['item_type'];
-										$landmark = $_POST['landmark'];
+    <?php
+    $_weight = $_POST['weight'];
+ $un = $_SESSION['sct'];
+ $dist = $_POST['dc'];
+ if($_POST['ds'] == 1)
+ {
+   $s_speed = "Medium";
+ }
+ if($_POST['ds'] == 2)
+ {
+  $s_speed = "Fast";
+ }
+ if($_POST['ds'] == 3)
+ {
+   $s_speed = "Turbo";
+ }
+ $i_type = $_POST['item_type'];
 
+    $query="select * from distlist where city1='$un' and city2='$dist'";
+    $query_run=mysqli_query($con,$query);
+  		while($row = mysqli_fetch_array($query_run))
+  		{
 
+  			//$_status = $row['dist'];
+        $query1="select * from Courier_val where speed='$s_speed' and type='$i_type'";
+        $query_run1=mysqli_query($con,$query1);
+          while($row1 = mysqli_fetch_array($query_run1))
+          {
+            $_value = $row1['rate_kg'];
 
+      			$_status = $row1['rate_kg'];
+            $_totalcost = $row1['rate_kg']*$row['dist'] * $_weight;
+            echo '<script type="text/javascript"> alert("estimated cost Rs = '.$_totalcost.' have to be paid at the time of pick-up") </script>';
 
- 										//echo $user_type ;
+          }
 
- 												$query="insert into consig(ord_by,sc,dc,cc,serv_type,item_type,messeage,full_address,landmark) values('".$un."','".$sc."','".$city."','".$sc."',".$ds.",'".$item_type."','".$message."','".$address."','".$landmark."')";
- 												$query_run=mysqli_query($con,$query);
- 													if($query_run)
- 														{
- 														$query2="select max(id) from consig where ord_by='$un'";
- 														$query_run2=mysqli_query($con,$query2);
- 														if($val=mysqli_fetch_array($query_run2))
- 															$to=$_SESSION['emml'];
- 															$sub='PicK Up Request';
- 															$msg="Hi ".$_SESSION['username'].", your item pickup request has been added successfully.\n ID:".$val[0].". Kindly keep it for future reference";
- 															$hed='from: no-reply';
- 															$sent=mail($to,$sub,$msg,$hed);
- 															if($sent)
- 																{
-																	$_weight = $_POST['weight'];
-															 	$usct = $_SESSION['sct'];
-															 	$dist = $_POST['dc'];
-															 	if($_POST['ds'] == 1)
-															 	{
-																 	$s_speed = "Medium";
-															 	}
-															 	if($_POST['ds'] == 2)
-															 	{
-																	$s_speed = "Fast";
-															 	}
-															 	if($_POST['ds'] == 3)
-															 	{
-																 $s_speed = "Turbo";
-															 	}
-															 	$i_type = $_POST['item_type'];
-																		$query3="select * from distlist where city1='$usct' and city2='$dist'";
-															    	$query_run3=mysqli_query($con,$query3);
-															  		while($row3 = mysqli_fetch_array($query_run3))
-															  		{
+  }
 
-
-															        $query4="select * from Courier_val where speed='$s_speed' and type='$i_type'";
-															        $query_run4=mysqli_query($con,$query4);
-															          while($row4 = mysqli_fetch_array($query_run4))
-															          {
-															            $_value = $row4['rate_kg'];
-																					$_distance = $row3['dist'];
-															      			$_status = $_value * $_distance;
-															            $_totalcost = $_status * $_weight;
-															            echo '<script type="text/javascript"> alert("estimated cost Rs = '.$_totalcost.' have to be paid at the time of pick-up") </script>';
-
-															          }
-
-															  }
-
- 																	echo '<script type="text/javascript"> alert("Request added successfully") </script>';
-																// how to add path to redirect page
-
- 																}
- 															else
- 															{
- 																echo '<script type="text/javascript"> alert("Request added successfully,error:mail not sent") </script>';
- 															}
-
-
-
- 														}
- 													else
- 														echo '<script type="text/javascript"> alert("Some Error Occured") </script>';
-
- 												}
-
- 											?>	<!--  ======================================  -->
+  	 ?>
 	</div>
 
 

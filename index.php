@@ -1,5 +1,10 @@
 <?php session_start();
-require 'dbconfig/config.php';?>
+
+require 'dbconfig/config.php';
+
+
+
+?>
 <!doctype html>
 
 
@@ -73,7 +78,7 @@ require 'dbconfig/config.php';?>
 
                                     </ul>
                                 </li>
-                                
+
                                 <li><a href="">login</a>
                                     <ul>
                                         <!-- <li><a href="/admin">admin</a></li> -->
@@ -143,9 +148,9 @@ require 'dbconfig/config.php';?>
                         </div>
                         <div class="blog-details text-center">
                             <div class="blog-meta"><a href="#"><i class="fa fa-ship"></i></a></div>
-                            <h3><a href="single-blog.html">Ocean Freight</a></h3>
+                            <h3><a href="#">Ocean Freight</a></h3>
                             <p>WE have a fleet of ships to deliver gooda across continents in a cost effective manner.</p>
-                            <a href="single-blog.html" class="read-more">Read More</a>
+
                         </div>
                     </div>
                 </div>
@@ -156,7 +161,7 @@ require 'dbconfig/config.php';?>
                         </div>
                         <div class="blog-details text-center">
                             <div class="blog-meta"><a href="#"><i class="fa fa-plane"></i></a></div>
-                            <h3><a href="single-blog.html">Air Freight</a></h3>
+                            <h3><a href="#">Air Freight</a></h3>
                             <p>Wish to deliver cargo in express way . Come we got you covered by exclusive fleet of flights that enable us to make one-day express delivery possible.</p>
 
                         </div>
@@ -169,7 +174,7 @@ require 'dbconfig/config.php';?>
                         </div>
                         <div class="blog-details text-center">
                             <div class="blog-meta"><a href="#"><i class="fa fa-truck"></i></a></div>
-                            <h3><a href="single-blog.html">Street Freight</a></h3>
+                            <h3><a href="#">Street Freight</a></h3>
                             <p>You live in a remote location not accessable by water or air dont worry we even got you covered with world class transportation trucks with world class facilities for all kind of goods.</p>
 
                         </div>
@@ -187,8 +192,8 @@ require 'dbconfig/config.php';?>
                 <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                     <div class="quote-form-area wow fadeIn">
                         <h3 id="Quote">Get A Quote</h3>
-                        <form class="quote-form" action="index.php">
-                            <p class="width-full">
+                        <form class="quote-form" action="price-list.php">
+                            <!-- <p class="width-full">
                                 <input type="text" name="name" id="name" placeholder="Your Name">
                             </p>
                             <p class="width-half">
@@ -204,8 +209,8 @@ require 'dbconfig/config.php';?>
                             </p>
                             <p>
                                 <textarea name="quote-message" id="quote-message" cols="30" rows="4" placeholder="Your Message..."></textarea>
-                            </p>
-                            <button type="submit" >Get Details</button>
+                            </p> -->
+                            <button type="submit">Get Details</button>
 
                         </form>
                     </div>
