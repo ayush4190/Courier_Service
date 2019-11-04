@@ -183,6 +183,7 @@ require '../dbconfig/config.php';
  														if($val=mysqli_fetch_array($query_run2))
  															$to=$_SESSION['emml'];
  															$sub='PicK Up Request';
+															$_cid = $val[0];
  															$msg="Hi ".$_SESSION['username'].", your item pickup request has been added successfully.\n ID:".$val[0].". Kindly keep it for future reference";
  															$hed='from: no-reply';
  															$sent=mail($to,$sub,$msg,$hed);
@@ -218,7 +219,10 @@ require '../dbconfig/config.php';
 																					$_distance = $row3['dist'];
 															      			$_status = $_value * $_distance;
 															            $_totalcost = $_status * $_weight;
-															            echo '<script type="text/javascript"> alert("estimated cost Rs = '.$_totalcost.' have to be paid at the time of pick-up") </script>';
+																					$query5="update consig set cost ='$_totalcost' where id=$_cid ";
+																					$query_run5 = mysqli_query($con,$query5);
+																					if($query_run5)
+																				  echo '<script type="text/javascript"> alert("estimated cost Rs = '.$_totalcost.' have to be paid at the time of pick-up") </script>';
 
 															          }
 

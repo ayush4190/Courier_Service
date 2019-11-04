@@ -185,7 +185,7 @@ require '../dbconfig/config.php';?>
 	</style>
 	<h3 align="center"> Items you have shipped till today using our SERVICE</h3>
 
-	<table><tr><th>Courier-ID</th><th>Source</th><th>Destination</th><th>Current Courier Branch</th><th>Date of Request</th><th> Status</th></tr>
+	<table><tr><th>Courier-ID</th><th>Source</th><th>Destination</th><th>Current Courier Branch</th><th>Date of Request</th><th> Status</th><th> Cost</th></tr>
 <!--adding consignments-->
 
 	<?php
@@ -204,7 +204,7 @@ require '../dbconfig/config.php';?>
 		}
 			if($row['status'] == 2)
 			$_status = "Delivered";
-  echo "<tr><td>" .$row['id'] ."</td><td>" .$row['sc'] ."</td><td>" .$row['dc'] ."</td><td>" .$row['cc'] ."</td><td>" .$row['added_on'] ."</td><td>" .$_status ."</td></tr>";
+  echo "<tr><td>" .$row['id'] ."</td><td>" .$row['sc'] ."</td><td>" .$row['dc'] ."</td><td>" .$row['cc'] ."</td><td>" .$row['added_on'] ."</td><td>" .$_status ."</td><td>" .$row['cost'] ."</td></tr>";
 }
 
 	 ?>
