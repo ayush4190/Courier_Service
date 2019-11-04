@@ -47,28 +47,16 @@
 		background-color: #dddddd;
 	}
 	</style>
-	<h3 align="center"> Items you have shipped till today using our SERVICE</h3>
+	<h3 align="center"> Our Price List</h3>
 
-	<table><tr><th>Courier-ID</th><th>Source</th><th>Destination</th><th>Current Courier Branch</th><th>Date of Request</th><th> Status</th></tr>
+	<table><tr><th>Delivery Speed</th><th>Rate Per Kg Per Km</th><th>Item Type</th></tr>
 <!--adding consignments-->
 
 	<?php
 	$un=$_SESSION['username'];
-  $query="select * from consig where ord_by='$un' ";
+  $query="select * from Courier_val  where speed='Medium'";
   $query_run=mysqli_query($con,$query);
-		while($row = mysqli_fetch_array($query_run))
-		{
-			if($row['status'] == -1)
-			$_status = "Yet to be Picked";
-			if($row['status'] == 0)
-			{
-
-
-			$_status = "In-transit";
-		}
-			if($row['status'] == 2)
-			$_status = "Delivered";
-  echo "<tr><td>" .$row['id'] ."</td><td>" .$row['sc'] ."</td><td>" .$row['dc'] ."</td><td>" .$row['cc'] ."</td><td>" .$row['added_on'] ."</td><td>" .$_status ."</td></tr>";
+		  echo "<tr><td>" .$row['speed'] ."</td><td>" .$row['rate_kg'] ."</td><td>" .$row['type'] ."</td></tr>";
 }
 
 	 ?>

@@ -79,7 +79,7 @@
         <!---- about-grids ---->
         <div class="about-grids">
             <div class="about-grids-row1">
-                                <h3>User agreement between the User (Customer) and The Carries Services, Bhopal</h3>
+                                <h3>User agreement between the User (Customer) and The Carries Services, NITK</h3>
 
 <p>Please read these terms and conditions of use (Terms and Conditions) carefully before using this Site and making any Carries booking.</p>
 
@@ -87,7 +87,7 @@
 
 <p>All Carries booking enquiries should be done by contacting Customers services via the telephone number on your Carries booking confirmation.</p>
 
-<p>The Site is offered to you by The Carries Services, whose registered office is at MP Nagar Bhopal under the company registration number 3432421.</p>
+<p>The Site is offered to you by The Carries Services, whose registered office is at MT3,NITK under the company registration number 3432421.</p>
 
 
 <h3>Changes to Terms and Conditions</h3>
@@ -121,9 +121,9 @@
                             <div class="top-footer-grid">
                                     <h3>Contact us</h3>
                                     <ul class="address">
-                                        <li><span class="map-pin"> </span><label>AP Kanvide Bhawan <br>3122 3 Chatrawaas <br>Near Powai Lake, Bhopal MP (462003) </label></li>
+                                        <li><span class="map-pin"> </span><label>MT3 <br>Rooms B018 and B016 <br>NITK, Surathkal ,Karnakata (575025) </label></li>
                                         <li><span class="mob"> </span>Ph & Fax no - 0995-5377130, Mob- 8000000008</li>
-                                        <li><span class="msg"> </span><a href="#">hello@Carries.in</a></li>
+                                        <li><span class="msg"> </span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=aashaym1@gmail.com.com">aashaym1@gmail.com</a></li>
                                     </ul>
                             </div>
                             <div class="top-footer-grid">
@@ -154,8 +154,8 @@
             <div class="container">
                     <div class="bottom-footer-left">
 
-                             <p> &copy; 2017 Carries.in. All rights reserved | Powered by: <a href="http://www.facebook.com/shivtelo" target="_blank">Techvish Technologies</a></p>
-                    </div>
+                                                        <p> &copy; 2019 Carries.in. All rights reserved | Powered by: <a href="http://www.nitk.ac.in" target="_blank">NITK</a></p>
+ </div>
                     <div class="clear"> </div>
             </div>
     </div>

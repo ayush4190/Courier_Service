@@ -102,9 +102,11 @@ require 'dbconfig/config.php';
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <div class="welcome-text text-center">
                             <h2>Contact Us</h2>
-                            <ul class="address">
-                                <li><span class="map-pin"> </span><label>AP Kanvide Bhawan <br>3122 3 Chatrawaas <br>Near Powai Lake, Bhopal MP (462003) </label></li>
-                                <li><span class="mob"> </span>Ph & Fax no - 0995-5377130, Mob- 8000000008</li>
+                             <ul class="address">
+                                        <li><span class="map-pin"> </span><label>MT3 <br>Rooms B018 and B016 <br>NITK, Surathkal ,Karnakata (575025) </label></li>
+                                        <li><span class="mob"> </span>Ph & Fax no - 0995-5377130, Mob- 8000000008</li>
+                                        <li><span class="msg"> </span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=aashaym1@gmail.com.com">aashaym1@gmail.com</a></li>
+                                   
                                 <li><span class="msg"> </span><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ayushkumar.171co111@nitk.edu.in@gmail.com">ayushkumar.171co111@nitk.edu.in</a></li>
                             </ul>
 
@@ -231,7 +233,30 @@ require 'dbconfig/config.php';
     <div class="footer-area dark-bg">
         <div class="footer-area-bg"></div>
         <div class="footer-top-area wow fadeIn">
-
+            <div class="container">
+                <!-- <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                        <div class="subscribe-content">
+                            <h2>Weekly Newsletter</h2>
+                            <p>There are many variations of passages of Carrries available.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                        <div class="subscriber-form-area">
+                            <form action="#" class="subsriber-form">
+                                <label for="subscriber-mail"><i class="fa fa-envelope-o"></i></label>
+                                <input type="email" name="subscriber-mail" id="subscriber-mail" placeholder="Enter Your Mail">
+                                <button type="submit">subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-border"> </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="footer-bottom-area wow fadeIn">
             <div class="container">
@@ -239,11 +264,11 @@ require 'dbconfig/config.php';
                     <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
                         <div class="single-footer-widget footer-about">
                             <h3>About Us</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>We Connect the world...</p>
                             <ul>
                                 <li><i class="fa fa-phone"></i> <a href="callto:+8801911854378">+8801911854378</a></li>
-                                <li><i class="fa fa-map-marker"></i> <a href="mailto:backpiper.com@gmail.com">backpiper.com@gmail.com</a></li>
-                                <li><i class="fa fa-phone"></i> Gazipur, 1704, Bangladesh. 1215.</li>
+                                <li><i class="fa fa-map-marker"></i> <a href="mailto:aashaym1@gmail.com">aashaym1@gmail.com</a></li>
+                                <li><i class="fa fa-phone"></i> MT3,NITK</li>
                             </ul>
                         </div>
                     </div>
@@ -254,14 +279,14 @@ require 'dbconfig/config.php';
                                 <li>
                                     <div class="twitter-icon"><i class="fa fa-phone"></i></div>
                                     <div class="tweet-detail">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem .</p>
+                                        <p>Carries is the best Courier service provider ever !!</p>
                                         <a href="#" class="tweet-meta">5 Miniutes Ago</a>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="twitter-icon"><i class="fa fa-phone"></i></div>
                                     <div class="tweet-detail">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem .</p>
+                                        <p>I don't have to worry about my couriers carries does it all for me ..</p>
                                         <a href="#" class="tweet-meta">5 Miniutes Ago</a>
                                     </div>
                                 </li>
@@ -272,12 +297,12 @@ require 'dbconfig/config.php';
                         <div class="single-footer-widget list-widget">
                             <h3>Customer Service</h3>
                             <ul>
-                                <!-- <li><a href="#">Support Forums</a></li>
-                                <li><a href="#">Communication</a></li> -->
-                                <li><a href="faq.php">FAQS</a></li>
-                                <li><a href="privacy-policy.php">Privacy Policy</a></li>
-                                <li><a href="terms-and-condition.php">Rules & Condition</a></li>
-                                <li><a href="contact.php">Contact Us</a></li>
+                                <li><a href="#">Support Forums</a></li>
+                                <li><a href="#">Communication</a></li>
+                                <li><a href="#">FAQS</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Rules & Condition</a></li>
+                                <li><a href="#">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -285,12 +310,12 @@ require 'dbconfig/config.php';
                         <div class="single-footer-widget instafeed-widget">
                             <h3>Customer Service</h3>
                             <ul>
-                                <li><img src="img/instafeed/1.jpg" alt=""></a></li>
-                                <li><img src="img/instafeed/2.jpg" alt=""></a></li>
-                                <li><img src="img/instafeed/3.jpg" alt=""></a></li>
-                                <li><img src="img/instafeed/4.jpg" alt=""></a></li>
-                                <li><img src="img/instafeed/5.jpg" alt=""></a></li>
-                                <li><img src="img/instafeed/6.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/instafeed/1.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/instafeed/2.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/instafeed/3.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/instafeed/4.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/instafeed/5.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="img/instafeed/6.jpg" alt=""></a></li>
                             </ul>
                         </div>
                     </div>
@@ -308,8 +333,7 @@ require 'dbconfig/config.php';
                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                         <div class="footer-copyright wow fadeIn">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
