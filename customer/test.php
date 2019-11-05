@@ -96,7 +96,7 @@ require '../dbconfig/config.php';?>
                                 <li><a href=""><?php echo $_SESSION['username'];  ?></a>
                                     <ul>
                                         <li><a href="editprof.php">Profile</a></li>
-                                        <li><a href="../index.php"><?php session_destroy();  ?>logout</a></li>
+                                        <li><a href=" ../index.php" >logout</a></li>
 
 
                                     </ul>
@@ -322,12 +322,9 @@ color:white;
                         <div class="single-footer-widget list-widget">
                             <h3>Customer Service</h3>
                             <ul>
-                                <li><a href="#">Support Forums</a></li>
-                                <li><a href="#">Communication</a></li>
-                                <li><a href="#">FAQS</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Rules & Condition</a></li>
-                                <li><a href="#">Contact Us</a></li>
+
+                                <li><a href="../terms-and-condition.php">Rules & Condition</a></li>
+                                <li><a href="../contact.php">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>

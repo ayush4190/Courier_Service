@@ -73,7 +73,7 @@ require 'dbconfig/config.php';
 
                                     </ul>
                                 </li>
-                                <li><a href="service.html">Service</a>
+
 
                                 </li>
                                 <li><a href="">login</a>
@@ -106,7 +106,7 @@ require 'dbconfig/config.php';
                                         <li><span class="map-pin"> </span><label>MT3 <br>Rooms B018 and B016 <br>NITK, Surathkal ,Karnakata (575025) </label></li>
                                         <li><span class="mob"> </span>Ph & Fax no - 0995-5377130, Mob- 8000000008</li>
                                         <li><span class="msg"> </span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=aashaym1@gmail.com.com">aashaym1@gmail.com</a></li>
-                                   
+
                                 <li><span class="msg"> </span><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ayushkumar.171co111@nitk.edu.in@gmail.com">ayushkumar.171co111@nitk.edu.in</a></li>
                             </ul>
 
@@ -297,12 +297,8 @@ require 'dbconfig/config.php';
                         <div class="single-footer-widget list-widget">
                             <h3>Customer Service</h3>
                             <ul>
-                                <li><a href="#">Support Forums</a></li>
-                                <li><a href="#">Communication</a></li>
-                                <li><a href="#">FAQS</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Rules & Condition</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="terms-and-condition.php">Rules & Condition</a></li>
+                                <li><a href="contact.php">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>

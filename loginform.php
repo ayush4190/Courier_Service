@@ -19,7 +19,7 @@ require 'dbconfig/config.php';
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login Customer</title>
+	<title>Login Employee</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -91,7 +91,7 @@ $(function() {
 						<span class="txt1">
 							Forgot
 						</span>
-						<a class="txt2" href="#">
+						<a class="txt2" href="forgot-password.php">
 							Username / Password?
 						</a>
 					</div>

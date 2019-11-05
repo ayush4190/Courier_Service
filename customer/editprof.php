@@ -6,7 +6,7 @@ session_start();
 				}
 			else
 				{
-					echo"<script>window.location='../'</script>";
+					echo"<script>window.location='./'</script>";
 				//	header('location:../');
 				}
 require '../dbconfig/config.php';
@@ -257,6 +257,7 @@ require '../dbconfig/config.php';
 <!------ about ---->
 </div>
 
+
 <div class="footer">
     <div class="top-footer">
             <div class="container">
@@ -264,9 +265,9 @@ require '../dbconfig/config.php';
                             <div class="top-footer-grid">
                                     <h3>Contact us</h3>
                                     <ul class="address">
-                                        <li><span class="map-pin"> </span><label>AP Kanvide Bhawan <br>3122 3 Chatrawaas <br>Near Powai Lake, Bhopal MP (462003) </label></li>
+                                        <li><span class="map-pin"> </span><label>MT3 <br>Rooms B018 and B016 <br>NITK, Surathkal ,Karnakata (575025) </label></li>
                                         <li><span class="mob"> </span>Ph & Fax no - 0995-5377130, Mob- 8000000008</li>
-                                        <li><span class="msg"> </span><a href="#">hello@Carries.in</a></li>
+                                        <li><span class="msg"> </span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=aashaym1@gmail.com.com">aashaym1@gmail.com</a></li>
                                     </ul>
                             </div>
                             <div class="top-footer-grid">
@@ -274,17 +275,15 @@ require '../dbconfig/config.php';
                                     <ul class="latest-post">
                                         <li><a href="../index.php">Home</a> </li>
 
-                                        <li><a href="../register.php">Register</a> </li>
-                                        <li><a href="../login.php">Login</a> </li>
+
                                     </ul>
                             </div>
                             <div class="top-footer-grid">
                                     <h3>Other Links</h3>
                                     <ul class="latest-post">
-                                        <li><a href="../about-us.php">About Us</a> </li>
-                                        <li><a href="../privacy-policy.php">Privacy Policy</a> </li>
+
                                         <li><a href="../terms-and-condition.php">Terms & Conditions</a> </li>
-                                        <li><a href="../faq.php">Help & FAQs</a> </li>
+
                                         <li><a href="../contact.php">Contact Us</a> </li>
                                     </ul>
                             </div>
@@ -297,7 +296,8 @@ require '../dbconfig/config.php';
             <div class="container">
                     <div class="bottom-footer-left">
 
-                             <p> &copy; 2017 Carries.in. All rights reserved | Powered by: <a href="http://www.facebook.com/shivtelo" target="_blank">Techvish Technologies</a></p>
+                             <p> &copy; 2019 Carries.in. All rights reserved | Powered by: <a href="http://www.nitk.ac.in" target="_blank">NITK</a></p>
+
                     </div>
                     <div class="clear"> </div>
             </div>

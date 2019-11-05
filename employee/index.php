@@ -46,7 +46,7 @@ require '../dbconfig/config.php';
         <!--<li ><a href="faq.php">FAQ</a></li>-->
         <li ><a href="../contact.php">Contact</a></li>
                 <li><a href="#"><?php echo $_SESSION['empusername'];  ?></a>
-                                    
+
                                 </li>
             </ul>
 </div>
@@ -93,6 +93,7 @@ require '../dbconfig/config.php';
 </div>
 <div class="about-top-grids">
     <div class="container">
+		
 
         <!---- about-grids ---->
         <div class="about-grids">
@@ -150,16 +151,15 @@ require '../dbconfig/config.php';
                                     <ul class="latest-post">
                                         <li><a href="../index.php">Home</a> </li>
 
-                                       
+
                                     </ul>
                             </div>
                             <div class="top-footer-grid">
                                     <h3>Other Links</h3>
                                     <ul class="latest-post">
-                                        <li><a href="../about-us.php">About Us</a> </li>
-                                        <li><a href="../privacy-policy.php">Privacy Policy</a> </li>
+
                                         <li><a href="../terms-and-condition.php">Terms & Conditions</a> </li>
-                                        <li><a href="../faq.php">Help & FAQs</a> </li>
+
                                         <li><a href="../contact.php">Contact Us</a> </li>
                                     </ul>
                             </div>

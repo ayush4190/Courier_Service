@@ -34,8 +34,11 @@ require '../dbconfig/config.php';
 		<a href="browsec.php"><input type="button" id="register-button" value="Browse Cities"></a>
 		<br>
 		<br>
-		<a href="Employee.php"><input type="button" id="register-button" value="Approve Employees"></a>
+		<a href="listemp.php"><input type="button" id="register-button" value="List of  Employees"></a>
 		<br>
+		<br>
+		<a href="approveemp.php"><input type="button" id="register-button" value="Approve Employees"></a>
+
 		<br>
 		<input type="submit" name="logout" id="logout-button" value="Logout" />
 		<br>

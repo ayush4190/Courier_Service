@@ -108,7 +108,7 @@ require 'dbconfig/config.php';
                                 <h1>WE MAKE STRONGEST SERVICE ABOVE THE WORLD</h1>
                                 <p>Bringing happiness to your doorstep is our privilage</p>
                                 <div class="home-button">
-                                    <a href="#">Our Service</a>
+                                    <a href="#service">Our Service</a>
                                     <a href="#Quote">Get A Quote</a>
                                 </div>
                             </div>
@@ -192,7 +192,7 @@ require 'dbconfig/config.php';
                 <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
                     <div class="quote-form-area wow fadeIn">
                         <h3 id="Quote">Get A Quote</h3>
-                        <form class="quote-form" action="price-list.php">
+                        <form class="quote-form" action="price-list.html">
                             <!-- <p class="width-full">
                                 <input type="text" name="name" id="name" placeholder="Your Name">
                             </p>
@@ -250,7 +250,7 @@ require 'dbconfig/config.php';
                 <div class="row">
                     <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
                         <div class="area-title text-center wow fadeIn">
-                            <h2>Our Service</h2>
+                            <h2 id="service">Our Service</h2>
                             <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, </p> -->
                         </div>
                     </div>
@@ -395,74 +395,7 @@ require 'dbconfig/config.php';
     <!--PROMO AREA END-->
 
     <!--TESTMONIAL AREA -->
-    <section class="testmonial-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
-                    <div class="area-title text-center wow fadeIn">
-                        <h2>what client’s say</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-                    <div class="client-photo-list wow fadeIn">
-                        <div class="client_photo">
-                            <div class="item">
-                                <img src="img/testmonial/1.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="img/testmonial/2.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="img/testmonial/3.jpg" alt="">
-                            </div>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="client_nav">
-                        <span class="fa fa-angle-left testi_prev"></span>
-                        <span class="fa fa-angle-right testi_next"></span>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-10 col-md-offset-1 text-center">
-                    <div class="client-details-content wow fadeIn">
-                        <div class="client_details">
-                            <div class="item">
-                                <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </q>
-                                <h3>JABIN KANE</h3>
-                                <p>CEO, TOPSMMPANEL.COM</p>
-                            </div>
-                            <div class="item">
-                                <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </q>
-                                <h3>JABIN KANE</h3>
-                                <p>CEO, TOPSMMPANEL.COM</p>
-                            </div>
-                            <div class="item">
-                                <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </q>
-                                <h3>JABIN KANE</h3>
-                                <p>CEO, TOPSMMPANEL.COM</p>
-                            </div>
-                            <div class="item">
-                                <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </q>
-                                <h3>JABIN KANE</h3>
-                                <p>CEO, TOPSMMPANEL.COM</p>
-                            </div>
-                            <div class="item">
-                                <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </q>
-                                <h3>JABIN KANE</h3>
-                                <p>CEO, TOPSMMPANEL.COM</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!--TESTMONIAL AREA END -->
 
  <!--FOOER AREA-->
@@ -533,12 +466,9 @@ require 'dbconfig/config.php';
                         <div class="single-footer-widget list-widget">
                             <h3>Customer Service</h3>
                             <ul>
-                                <li><a href="#">Support Forums</a></li>
-                                <li><a href="#">Communication</a></li>
-                                <li><a href="#">FAQS</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Rules & Condition</a></li>
-                                <li><a href="#">Contact Us</a></li>
+
+                                <li><a href="terms-and-condition.php">Rules & Condition</a></li>
+                                <li><a href="contact.php">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>

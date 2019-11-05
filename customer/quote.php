@@ -111,8 +111,8 @@ require '../dbconfig/config.php';
 						<select class="selection-2" name="item_type">
 							<option >Select Type</option>
 							<option >Fragile</option>
-							<option >Documents</option>
-							<option >Perisable Goods</option>
+							<option >Document</option>
+							<option >Normal</option>
 						</select>
 					</div>
 					<span class="focus-input100"></span>
@@ -161,6 +161,15 @@ require '../dbconfig/config.php';
  }
  $i_type = $_POST['item_type'];
 
+	if($un == $dist)
+	{
+		echo '<script type="text/javascript"> alert("estimated cost Rs =0 have to be paid at the time of pick-up because we offer free hoarding") </script>';
+
+	}
+	else {
+		// code...
+
+
     $query="select * from distlist where city1='$un' and city2='$dist'";
     $query_run=mysqli_query($con,$query);
   		while($row = mysqli_fetch_array($query_run))
@@ -180,6 +189,7 @@ require '../dbconfig/config.php';
           }
 
   }
+}
 
   	 ?>
 	</div>

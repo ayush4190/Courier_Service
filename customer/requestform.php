@@ -115,8 +115,8 @@ require '../dbconfig/config.php';
 						<select class="selection-2" name="item_type">
 							<option >Select Type</option>
 							<option >Fragile</option>
-							<option >Documents</option>
-							<option >Perisable Goods</option>
+							<option >Document</option>
+							<option >Normal</option>
 						</select>
 					</div>
 					<span class="focus-input100"></span>
