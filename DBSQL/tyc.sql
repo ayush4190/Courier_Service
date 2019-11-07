@@ -128,7 +128,46 @@ INSERT INTO `distlist` (`city1`, `city2`, `dist`) VALUES
 
 -- --------------------------------------------------------
 
+-- ---------------------
+-- Table of Courier_val(cost of item per kg per km)
+
+
+CREATE TABLE `Courier_val` (
+  `speed` varchar(100) NOT NULL,
+  `rate_kg` float NOT NULL,
+  `type` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `Courier_val`(`speed`,`rate_kg`,`type`) VALUES
+('Medium','1.2','Normal'),
+('Fast','1.5','Normal'),
+('Turbo','2','Normal'),
+('Medium','1.7','Fragile'),
+('Fast','2', 'Fragile' ),
+('Turbo','2.5','Fragile'),
+('Medium','3', 'Document'),
+('Fast','3.5','Document'),
+('Turbo','4', 'Document');
+
+
+
+
+
 --
+
+-- -------------------------------------------------------------
+CREATE TABLE `messagerequest` (
+  `name` varchar(200) NOT NULL,
+  `email ` varchar(100) NOT NULL,
+  `phone_no ` varchar(20) NOT NULL,
+  `message` varchar(200) NOT NULL ,
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+
+
+-- ---------------------------------------------------------------
 -- Table structure for table `empuserinfo`
 --
 
